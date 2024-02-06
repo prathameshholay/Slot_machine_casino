@@ -1,0 +1,66 @@
+body {
+    background-image: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.6); /* Use rgba for background color with alpha channel */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    min-height: 400px;
+    display: flexbox;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    transition: .5s ease;
+    animation: runningLight 1s linear infinite;
+}
+.main:hover{
+    box-shadow: 10px 10px hsl(184, 100%, 97%);
+    border: none;
+}
+#name{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    background-color: hsl(184, 100%, 97%);
+    color: black;
+    width: 100px;
+    height: 40px;
+    transition: 0.4s ease;
+}
+button:hover{
+    box-shadow: 5px 5px rgb(117, 107, 107);
+}
+@keyframes runningLight {
+    0% {
+        border-color: transparent transparent transparent transparent;
+    }
+    25% {
+        border-color: transparent rgb(0, 0, 0) transparent transparent;
+    }
+    50% {
+        border-color: transparent transparent transparent rgb(0, 0, 0);
+    }
+    75% {
+        border-color: rgb(0, 0, 0) transparent transparent transparent;
+    }
+    100% {
+        border-color: transparent transparent rgb(0, 0, 0) transparent;
+    }
+}
+
+#developer{
+    color: hsl(15, 97%, 55%)
+}
+#redesigner{
+    color: hsl(242, 56%, 28%)
+}
